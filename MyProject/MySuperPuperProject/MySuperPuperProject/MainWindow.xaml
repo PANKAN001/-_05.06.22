@@ -1,0 +1,21 @@
+﻿<Window x:Class="MySuperPuperProject.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        Title="Горнолыжный курорт" Height="450" Width="800" Icon="logo.png">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="75"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="30"/>
+        </Grid.RowDefinitions>
+        <Image Source="C:\Users\user6\Desktop\3 поток\Общие ресурсы\logo.png" HorizontalAlignment="Left"></Image>
+        <TextBlock Text="Игора" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="30" FontFamily="Comic Sans MS"></TextBlock>
+        <Grid Background="#76e383" Panel.ZIndex="-4"></Grid>
+        <Grid Grid.Row="2" Background="#FF498C51"></Grid>
+        <Frame Grid.Row="1" Name="MainFrame"></Frame>
+
+    </Grid>
+</Window>

@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Хранилище NoitaModelContainer" CdmEntityContainer="NoitaEntities">
+    <EntitySetMapping Name="Клиенты">
+      <EntityTypeMapping TypeName="NoitaModel.Клиенты">
+        <MappingFragment StoreEntitySet="Клиенты">
+          <ScalarProperty Name="ФИО" ColumnName="ФИО" />
+          <ScalarProperty Name="Код_клиента" ColumnName="Код_клиента" />
+          <ScalarProperty Name="Серия_паспорта" ColumnName="Серия_паспорта" />
+          <ScalarProperty Name="Номер_паспорта" ColumnName="Номер_паспорта" />
+          <ScalarProperty Name="Дата_рождения" ColumnName="Дата_рождения" />
+          <ScalarProperty Name="Индекс" ColumnName="Индекс" />
+          <ScalarProperty Name="Город" ColumnName="Город" />
+          <ScalarProperty Name="Улица" ColumnName="Улица" />
+          <ScalarProperty Name="Дом" ColumnName="Дом" />
+          <ScalarProperty Name="Квартира" ColumnName="Квартира" />
+          <ScalarProperty Name="e_mail" ColumnName="e-mail" />
+          <ScalarProperty Name="password" ColumnName="password" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

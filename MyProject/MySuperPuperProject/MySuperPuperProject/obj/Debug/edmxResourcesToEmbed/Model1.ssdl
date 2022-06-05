@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Хранилище NoitaModel" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <!--Ошибки, обнаруженные при создании:
+предупреждение 6002: В таблице или представлении "Noita.dbo.Клиенты" не определен первичный ключ. Ключ был выведен, а определение таблицы или представления было создано в режиме только для чтения.-->
+  <EntityType Name="Клиенты">
+    <Key>
+      <PropertyRef Name="Квартира" />
+    </Key>
+    <Property Name="ФИО" Type="varchar" MaxLength="100" />
+    <Property Name="Код_клиента" Type="varchar" MaxLength="10" />
+    <Property Name="Серия_паспорта" Type="varchar" MaxLength="5" />
+    <Property Name="Номер_паспорта" Type="varchar" MaxLength="10" />
+    <Property Name="Дата_рождения" Type="date" />
+    <Property Name="Индекс" Type="varchar" MaxLength="7" />
+    <Property Name="Город" Type="varchar" MaxLength="100" />
+    <Property Name="Улица" Type="varchar" MaxLength="100" />
+    <Property Name="Дом" Type="varchar" MaxLength="3" />
+    <Property Name="Квартира" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="e-mail" Type="varchar" MaxLength="100" />
+    <Property Name="password" Type="varchar" MaxLength="10" />
+  </EntityType>
+  <EntityContainer Name="Хранилище NoitaModelContainer">
+    <EntitySet Name="Клиенты" EntityType="Self.Клиенты" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [Клиенты].[ФИО] AS [ФИО], 
+    [Клиенты].[Код_клиента] AS [Код_клиента], 
+    [Клиенты].[Серия_паспорта] AS [Серия_паспорта], 
+    [Клиенты].[Номер_паспорта] AS [Номер_паспорта], 
+    [Клиенты].[Дата_рождения] AS [Дата_рождения], 
+    [Клиенты].[Индекс] AS [Индекс], 
+    [Клиенты].[Город] AS [Город], 
+    [Клиенты].[Улица] AS [Улица], 
+    [Клиенты].[Дом] AS [Дом], 
+    [Клиенты].[Квартира] AS [Квартира], 
+    [Клиенты].[e-mail] AS [e-mail], 
+    [Клиенты].[password] AS [password]
+    FROM [dbo].[Клиенты] AS [Клиенты]</DefiningQuery>
+    </EntitySet>
+  </EntityContainer>
+</Schema>
